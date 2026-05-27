@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-hl: #97fce4;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: #050605;
+  color: #f5f5f5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image:
+    radial-gradient(
+      ellipse 80% 50% at 50% -10%,
+      rgba(151, 252, 228, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 90% 110%,
+      rgba(151, 252, 228, 0.08),
+      transparent 60%
+    );
+  background-attachment: fixed;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(151, 252, 228, 0.35); }
+  50%      { box-shadow: 0 0 0 12px rgba(151, 252, 228, 0); }
+}
+
+@keyframes float-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes count-up {
+  from { transform: translateY(40%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.animate-float-in   { animation: float-in 0.4s ease-out both; }
+.animate-pulse-glow { animation: pulse-glow 2.4s ease-out infinite; }
+.animate-count-up   { animation: count-up 0.3s ease-out both; }
+
+.bg-grain {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 3px 3px;
 }

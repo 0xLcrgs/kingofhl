@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# runtime vote storage (Vercel filesystem is ephemeral anyway)
+/data/votes.json
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.gstack/
