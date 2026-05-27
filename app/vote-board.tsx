@@ -555,7 +555,8 @@ function VisitButton({ url }: { url: string }) {
 }
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+  "https://kingofhl.vercel.app";
 
 function SharePanel({ project, highlight }: { project: Project; highlight: boolean }) {
   const [origin, setOrigin] = useState(SITE_URL);
