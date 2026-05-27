@@ -97,8 +97,8 @@ export const projects: Project[] = [
     "description": "Trading so good it feels like a dream. On Hyperliquid.",
     "status": "Live",
     "url": "https://dreamcash.xyz/share?code=XRLYFY",
-    "logo": "https://unavatar.io/x/dreamcashxyz",
-    "xHandle": "dreamcashxyz",
+    "logo": "https://unavatar.io/x/Dreamcash",
+    "xHandle": "Dreamcash",
     "categories": [
       "Wallet",
       "Front-End",
