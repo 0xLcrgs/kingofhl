@@ -21,6 +21,7 @@ const EXCLUDED = new Set([
   'Quote', 'OpenPond AI', 'Papertrade.xyz', 'SIR', 'Snakehead', 'Stratium',
   'Supurr.app', 'The Arena', 'UXUY', 'Valiant', 'Ventuals', 'VibeLiquid',
   'Vooi', 'WunderTrading',
+  'Hyperwagyu', 'Senpi',
 ]);
 
 const FORCE_INCLUDE = new Set([

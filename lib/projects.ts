@@ -187,19 +187,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    "id": "hyperwagyu",
-    "name": "Hyperwagyu",
-    "description": "A Trustless Hyperliquid <> Monero Bridge",
-    "status": "Live",
-    "url": "https://www.hyperwagyu.xyz/",
-    "logo": "https://unavatar.io/x/PerpetualCow",
-    "xHandle": "PerpetualCow",
-    "categories": [
-      "Bridge",
-      "Front-End"
-    ]
-  },
-  {
     "id": "insilico-terminal",
     "name": "Insilico Terminal",
     "description": "First professional-grade order and execution management terminal on HyperLiquid, free to use, with advanced features for all traders.",
@@ -457,19 +444,6 @@ export const projects: Project[] = [
     "xHandle": "SandwichTrading",
     "categories": [
       "Front-End"
-    ]
-  },
-  {
-    "id": "senpi",
-    "name": "Senpi",
-    "description": "Where agents (and humans) win on Hyperliquid.",
-    "status": "Live",
-    "url": "https://senpi.ai/?r=M194574",
-    "logo": "https://unavatar.io/x/senpi_ai",
-    "xHandle": "senpi_ai",
-    "categories": [
-      "Front-End",
-      "Tools"
     ]
   },
   {
